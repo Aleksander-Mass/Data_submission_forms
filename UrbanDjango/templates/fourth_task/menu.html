@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block page_title %}Default Title{% endblock %}</title>
+</head>
+<body>
+    <header>
+        {% block page_header %}
+        <!-- Здесь будет заголовок страницы -->
+        {% endblock %}
+    </header>
+    <nav>
+        {% block menu %}
+        <ul>
+            <li><a href="/platform/">Главная</a></li>
+            <li><a href="/platform/games/">Магазин</a></li>
+            <li><a href="/platform/cart/">Корзина</a></li>
+        </ul>
+        {% endblock %}
+    </nav>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
